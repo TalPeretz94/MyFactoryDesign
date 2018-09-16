@@ -1,9 +1,10 @@
 
 public class Ferrari extends CarFactory {
 	
-	public Ferrari() {
+	public Ferrari(String color) {
+		super(color);
 		setName("Ferrari");
-		setColor("Yellow");
+		
 		setMaxSpeed(230);
 		setModelYear(2018);
 		

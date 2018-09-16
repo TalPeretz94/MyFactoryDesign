@@ -1,9 +1,13 @@
 
-public class CarFactory {
+public abstract class CarFactory {
 	private String name;
 	private int ModelYear;
 	private int maxSpeed;
 	private String Color;
+	public CarFactory(String color) {
+		setColor(color);
+	}
+	
 
 	public String getName() {
 		return name;

@@ -13,15 +13,15 @@ public class MyMain {
 
 		switch (userChose) {
 		case "B":
-			myCar = new BMW();
+			myCar = new BMW("Blue");
 			break;
 
 		case "F":
-			myCar = new Ferrari();
+			myCar = new Ferrari("Yellow");
 			break;
 
 		case "M":
-			myCar = new Mercedes();
+			myCar = new Mercedes("Green");
 			break;
 		default:
 			System.out.println("not a valid input");

@@ -1,9 +1,10 @@
 
 public class BMW extends CarFactory {
 
-	public BMW() {
+	public BMW(String color) {
+		super(color);
 		setName("BMW");
-		setColor("Black");
+		
 		setMaxSpeed(180);
 		setModelYear(2012);
 		
