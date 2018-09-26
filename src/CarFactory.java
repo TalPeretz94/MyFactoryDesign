@@ -1,49 +1,29 @@
 
-public abstract class CarFactory {
-	private String name;
-	private int ModelYear;
-	private int maxSpeed;
-	private String Color;
-	public CarFactory(String color) {
-		setColor(color);
-	}
+public class CarFactory {
 	
 
-	public String getName() {
-		return name;
-	}
+	public static Car createCar(String userInput) {
+		Car myCar;
+		switch (userInput) {
+		case "B":
+			myCar = new BMW("Blue");
+			break;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+		case "F":
+			myCar = new Ferrari("Yellow");
+			break;
 
-	public int getModelYear() {
-		return ModelYear;
-	}
+		case "M":
+			myCar = new Mercedes("Green");
+			break;
+		default:
+			System.out.println("not a valid input");
+			return null;
 
-	public void setModelYear(int modelYear) {
-		ModelYear = modelYear;
-	}
+		}
 
-	public int getMaxSpeed() {
-		return maxSpeed;
-	}
+		return myCar;
 
-	public void setMaxSpeed(int maxSpeed) {
-		this.maxSpeed = maxSpeed;
-	}
-
-	public String getColor() {
-		return Color;
-	}
-
-	public void setColor(String color) {
-		Color = color;
-	}
-
-	public void drive() {
-		System.out.println(
-				getColor() + " " + getName() + " start driving and will get to speed " + getMaxSpeed() + "Km/h ");
 	}
 
 }

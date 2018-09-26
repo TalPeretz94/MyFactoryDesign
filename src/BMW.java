@@ -1,5 +1,5 @@
 
-public class BMW extends CarFactory {
+public class BMW extends Car {
 
 	public BMW(String color) {
 		super(color);
@@ -9,6 +9,8 @@ public class BMW extends CarFactory {
 		setModelYear(2012);
 		
 	}
+
+	
 	
 	
 	

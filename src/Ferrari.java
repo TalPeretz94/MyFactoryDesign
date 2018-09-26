@@ -1,5 +1,5 @@
 
-public class Ferrari extends CarFactory {
+public class Ferrari extends Car {
 	
 	public Ferrari(String color) {
 		super(color);
